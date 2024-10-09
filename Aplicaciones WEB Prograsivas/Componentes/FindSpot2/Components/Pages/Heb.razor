@@ -1,0 +1,173 @@
+﻿@page "/Heb"
+<!-- Header -->
+<header style="background-color: #059B9A;" text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <img src="/images/logo.png" alt="Logo" style="height: 60px; margin-right: 10px;">
+                FindSpot
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            </div>
+        </div>
+    </nav>
+</header>
+<br />
+<h1>H-E-B Valle Oriente</h1>
+<!-- Carrusel de Imágenes -->
+<div id="carouselExample" class="carousel slide mt-5" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/heb1.jpg" class="d-block w-100" alt="Imagen 1">
+        </div>
+        <div class="carousel-item">
+            <img src="images/heb2.jpg" class="d-block w-100" alt="Imagen 2">
+        </div>
+        <div class="carousel-item">
+            <img src="images/heb3.jpg" class="d-block w-100" alt="Imagen 3">
+        </div>
+        <div class="carousel-item">
+            <img src="images/heb4.jpg class="d-block w-100" alt="Imagen 4">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+<!-- Línea divisoria -->
+<hr class="my-4" />
+
+<!-- Mapa de Google Maps -->
+<div class="google-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.87890702483!2d-100.33293839999999!3d25.6421442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be65f70980bf%3A0x545bafc22695113c!2sH-E-B%20Valle%20Oriente!5e0!3m2!1ses-419!2smx!4v1728335236731!5m2!1ses-419!2smx"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<!-- Información de Contacto -->
+<div class="contact-info text-center mt-4">
+    <h5>Información de Contacto</h5>
+    <p>Teléfono:(+52) 8181268500</p>
+    <p>Página de contacto: <a href="https://www.heb.com.mx/" class="text-primary">https://www.heb.com.mx/</a></p>
+</div>
+
+<!-- Línea divisoria -->
+<hr class="my-4" />
+
+<!-- Botones -->
+<div class="text-center">
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="checkIn" />
+        <label class="form-check-label" for="checkIn">Check-in</label>
+    </div>
+    <button class="btn btn-primary mx-2">Guardar</button>
+</div>
+
+<!-- Sección de opiniones -->
+<div class="opinions-section text-center mt-5">
+    <h5>Deja tu opinión</h5>
+    <div class="input-group mb-3" style="max-width: 60%; margin: 0 auto;">
+        <input type="text" class="form-control" placeholder="Dinos tu opinión..." @bind="newOpinion" />
+        <button class="btn btn-success" @onclick="PublishOpinion">Publicar</button>
+    </div>
+
+    <div class="mt-4">
+        @if (opinions.Count > 0)
+        {
+            @foreach (var opinion in opinions)
+            {
+                <div class="card mb-3" style="max-width: 60%; margin: 0 auto;">
+                    <div class="card-body">
+                        <p class="card-text">@opinion</p>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>No hay opiniones todavía.</p>
+        }
+    </div>
+</div>
+
+@code {
+    private string newOpinion = string.Empty; // Variable para la nueva opinión
+    private List<string> opinions = new List<string>(); // Lista de opiniones
+
+    // Función para publicar una nueva opinión
+    private void PublishOpinion()
+    {
+        // Verifica si la opinión no está vacía
+        if (!string.IsNullOrWhiteSpace(newOpinion))
+        {
+            // Añade la nueva opinión a la lista de opiniones
+            opinions.Add(newOpinion);
+
+            // Limpia el campo de texto después de publicar
+            newOpinion = string.Empty;
+
+            // Redibuja la interfaz para mostrar la nueva opinión
+            StateHasChanged();
+        }
+        else
+        {
+            // Mensaje para verificar si la opinión está vacía
+            Console.WriteLine("La opinión está vacía y no será añadida.");
+        }
+    }
+}
+
+
+<style>
+    .carousel-img {
+        height: 300px; /* Reducido para hacer el carrusel más pequeño */
+        object-fit: cover; /* Ajuste para que las imágenes llenen el contenedor sin distorsionarse */
+        object-position: center; /* Centra el contenido de las imágenes */
+    }
+
+    .carousel {
+        max-width: 60%; /* Limita el ancho del carrusel en relación al tamaño de la página */
+        margin: 0 auto; /* Centra el carrusel en la página */
+    }
+    /* Mapa de Google */
+    .google-map {
+        max-width: 60%; /* Ajusta el ancho del mapa */
+        margin: 0 auto; /* Centra el mapa en la página */
+    }
+
+    iframe {
+        width: 100%; /* El iframe ocupará el 100% del contenedor */
+        height: 300px; /* Ajusta la altura del mapa */
+    }
+
+    /* Estilo para la información de contacto */
+    .contact-info {
+        margin: 20px 0;
+    }
+
+    .opinions-section {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
+    .card {
+        margin-top: 10px;
+    }
+</style>
+
+<!-- Incluye Bootstrap JS para la funcionalidad del navbar -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+

@@ -1,0 +1,54 @@
+﻿@page "/Search"
+
+<!-- Header -->
+<header style="background-color: #059B9A;" text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <img src="/images/logo.png" alt="Logo" style="height: 60px; margin-right: 10px;">
+                FindSpot
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- Body con imagen de fondo y texto centrado -->
+<div class="bg-image" style="background-image: url('/images/ciudad.jpg'); height: 70vh; background-size: cover; background-position: center;">
+<div class="search-container d-flex justify-content-center align-items-center">
+    <div class="search-box text-center">
+        <h1 class="text-white mb-4">¿A donde te gustaria ir?</h1>
+        <div class="input-group mb-3" style="max-width: 600px; margin: 0 auto;">
+            <input type="text" class="form-control" placeholder="Buscar..." aria-label="Buscar" aria-describedby="button-addon2">
+            <button class="btn btn-primary" type="button" id="button-addon2">Buscar</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<style>
+
+
+    .search-container {
+        height: 60vh; /* Hace que el contenedor ocupe toda la pantalla */
+        position: relative;
+        z-index: 2;
+    }
+
+    .search-box {
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el buscador */
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .input-group input {
+        opacity: 0.8; /* Hace que el placeholder tenga algo de opacidad */
+    }
+
+    .input-group button {
+        opacity: 0.9; /* Hace que el botón se vea un poco más opaco */
+    }
+</style>

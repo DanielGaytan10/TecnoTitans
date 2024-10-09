@@ -1,0 +1,133 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FindSpot2.bundle.scp.css",
+      "PackagePath": "staticwebassets\\FindSpot2.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\ciudad.jpg",
+      "PackagePath": "staticwebassets\\images\\ciudad.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\fondo.jpg",
+      "PackagePath": "staticwebassets\\images\\fondo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\fundi1.jpg",
+      "PackagePath": "staticwebassets\\images\\fundi1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\fundi2.jpg",
+      "PackagePath": "staticwebassets\\images\\fundi2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\fundi3.jpg",
+      "PackagePath": "staticwebassets\\images\\fundi3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\fundi4.jpg",
+      "PackagePath": "staticwebassets\\images\\fundi4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\heb1.jpg",
+      "PackagePath": "staticwebassets\\images\\heb1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\heb2.jpg",
+      "PackagePath": "staticwebassets\\images\\heb2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\heb3.jpg",
+      "PackagePath": "staticwebassets\\images\\heb3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\heb4.jpg",
+      "PackagePath": "staticwebassets\\images\\heb4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\image1.jpg",
+      "PackagePath": "staticwebassets\\images\\image1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\image2.jpg",
+      "PackagePath": "staticwebassets\\images\\image2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\image3.jpg",
+      "PackagePath": "staticwebassets\\images\\image3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\image4.jpg",
+      "PackagePath": "staticwebassets\\images\\image4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\ob1.jpg",
+      "PackagePath": "staticwebassets\\images\\ob1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\ob2.jpg",
+      "PackagePath": "staticwebassets\\images\\ob2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\ob3.jpg",
+      "PackagePath": "staticwebassets\\images\\ob3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\ob4.jpg",
+      "PackagePath": "staticwebassets\\images\\ob4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\wal1.jpg",
+      "PackagePath": "staticwebassets\\images\\wal1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\wal2.jpg",
+      "PackagePath": "staticwebassets\\images\\wal2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\wal3.jpg",
+      "PackagePath": "staticwebassets\\images\\wal3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\FindSpot2\\FindSpot2\\wwwroot\\images\\wal4.jpg",
+      "PackagePath": "staticwebassets\\images\\wal4.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FindSpot2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.FindSpot2.props",
+      "PackagePath": "build\\FindSpot2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.FindSpot2.props",
+      "PackagePath": "buildMultiTargeting\\FindSpot2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.FindSpot2.props",
+      "PackagePath": "buildTransitive\\FindSpot2.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
